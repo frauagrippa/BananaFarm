@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #FFFFBF;
+}
+
+body {
+    font-size: 1.4em;
+}
+
+p {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 50%;
+    text-align: center;
+}
+
+p.message {
+    color: green;
+}
+
+p.error {
+    color: red;
+}
+
+/* Styling for the navigation bar at the top */
+.navbar {
+    float:left;
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.navbar ul {
+    clear:left;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    left:50%;
+    text-align:center;
+}
+
+.navbar ul li a:hover {
+    background: #b9ffb9;
+    color: #318430;
+}
+
+.navSelected {
+    background: #b9ffb9;
+}
+
+.navbar ul li a.active,
+.navbar ul li a.active:hover {
+    background: #b9ffb9;
+    font-weight:bold;
+}
+
+.navbar ul li {
+    display:block;
+    float:left;
+    list-style:none;
+    padding:0;
+    position:relative;
+    right:50%;
+}
+
+.navbar ul li a {
+    display:block;
+    margin: 3px 40px;
+    padding:3px 10px;
+    border-radius: 5px;
+    color: #4ee84d;
+    text-decoration:none;
+    font-size: 27px;
+    font-family:"Times New Roman", Times, serif;
+    line-height:1.3em;
+    transition: all 0.5s ease;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
