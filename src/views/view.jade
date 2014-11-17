@@ -1,0 +1,28 @@
+extends ./layout.jade
+
+block title
+   title Banana Farm
+
+block uppercontent
+   h1 Welcome to the Banana Farm!
+
+block lowercontent
+   p Here is where you can view your banana family.
+   br
+
+   if error
+      p #{error}
+   else if empty
+      p Your farm is empty! Click here to a(href="/create") fix that!
+   else
+      div.results
+         - each val in results
+            div.entry
+              span Name: #{val.name}
+              br
+              span Mood: #{val.mood}
+              br
+              span Color: #{val.color}
+              br
+              span Flavor: #{val.flavor}
+              br

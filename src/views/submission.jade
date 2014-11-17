@@ -1,0 +1,16 @@
+extends ./layout.jade
+
+block title
+   title Banana Farm
+
+block uppercontent
+   h1 Welcome to the Banana Farm!
+
+block lowercontent
+   if error
+      p #{error}
+      a(href="/create") Go Back
+
+   else
+      p #{name} has been created and added to your Banana Farm!
+      a(href="/view") View Your Bananas!
